@@ -22,6 +22,11 @@
   .b-sub{font-size:11px;color:#888;letter-spacing:.15em;text-transform:uppercase;font-weight:500;margin-top:2px}
   .arrow{color:#01D923;font-size:24px;font-weight:700}
   a.report{display:block;text-decoration:none;background:#01D923;color:#0a0a0a;border-radius:13px;padding:18px;text-align:center;font-weight:700;font-size:16px;letter-spacing:.06em;text-transform:uppercase;margin-top:6px}
+  .rec{color:#01D923;font-weight:600}
+  details.opts{margin:6px 0 0}
+  details.opts summary{list-style:none;cursor:pointer;text-align:center;background:#121212;border:1px solid #2a2a2a;border-radius:13px;padding:15px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#fff}
+  details.opts summary::-webkit-details-marker{display:none}
+  details.opts[open] summary{border-color:#01D923;color:#01D923;margin-bottom:16px}
   .foot{margin-top:30px;text-align:center;font-size:12px;color:#555;letter-spacing:.06em}
 </style>
 </head>
@@ -31,11 +36,21 @@
   <h1>It&#39;s all <span class="lime">connected</span></h1>
   <div class="sub">The July campaign in one place. Billboards, the newsletter, and a quick report.</div>
 
-  <h2>The billboards</h2>
-  <img class="board" src="hero-this-is-the-place.jpg" alt="This Is The Place billboard">
-  <p class="cap">This Is The Place</p>
-  <img class="board" src="billboard-feel-it-again.jpg" alt="Feel It Again billboard">
-  <p class="cap">Feel It Again · every club, real faces</p>
+  <h2>The billboard</h2>
+  <img class="board" src="billboard-isaac.jpg" alt="This Is The Place billboard — Isaac">
+  <p class="cap"><span class="rec">★ Recommended</span> &nbsp;·&nbsp; This Is The Place — the final billboard</p>
+
+  <details class="opts">
+    <summary>Other options &nbsp;&rsaquo;</summary>
+    <img class="board" src="billboard-crew.jpg" alt="The Crew billboard">
+    <p class="cap">Option · The Crew</p>
+    <img class="board" src="billboard-doreen.jpg" alt="Doreen billboard">
+    <p class="cap">Option · Doreen, the jump</p>
+    <img class="board" src="billboard-class.jpg" alt="The Class billboard">
+    <p class="cap">Option · The Class</p>
+    <img class="board" src="billboard-feel-it-again.jpg" alt="Feel It Again billboard">
+    <p class="cap">Option · Feel It Again, every club</p>
+  </details>
 
   <h2>The newsletter — tap a club</h2>
   <a class="branch" href="delta.html"><span><span class="b-name">Delta Chambers</span><br><span class="b-sub">Issue 039 · Westlands</span></span><span class="arrow">&rsaquo;</span></a>
